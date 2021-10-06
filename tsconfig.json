@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "Node",
+    "strict": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noImplicitThis": false,
+    "noImplicitAny": false,
+    "declaration": true,
+    "declarationDir": "./dist",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "downlevelIteration": true,
+  },
+  "include": [
+    "src/**/*",
+   ],
+  "exclude": [
+    "node_modules"
+  ]
+}

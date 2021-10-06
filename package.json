@@ -1,0 +1,36 @@
+{
+  "name": "@tpl/web-lib",
+  "version": "0.0.0",
+  "description": "web library template",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "serve": "vite",
+    "build:dev": "vite build -w",
+    "build": "rimraf dist && vite build && npm run roll-types",
+    "roll-types": "api-extractor run && npm run rm-temp-types",
+    "rm-temp-types": "rimraf dist/lib dist/types dist/constants",
+    "lint": "eslint src --fix --ext .ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.18.12",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "core-js": "^3.18.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.24.2",
+    "less": "^4.1.2",
+    "rimraf": "^3.0.2",
+    "sass": "^1.42.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.3"
+  }
+}
