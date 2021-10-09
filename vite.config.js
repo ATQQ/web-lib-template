@@ -20,7 +20,7 @@ module.exports = defineConfig({
   build: {
     sourcemap: true,
     outDir: 'dist',
-    minify: false,
+    minify: !process.env.dev,
     lib: {
       entry,
       name: libName,

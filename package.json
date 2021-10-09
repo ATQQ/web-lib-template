@@ -7,7 +7,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "serve": "vite",
-    "build:dev": "vite build -w",
+    "build:dev": "dev=true vite build -w",
     "build": "rimraf dist && vite build && npm run roll-types",
     "roll-types": "api-extractor run && npm run rm-temp-types",
     "rm-temp-types": "rimraf dist/lib dist/types dist/constants",

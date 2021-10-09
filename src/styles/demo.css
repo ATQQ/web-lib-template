@@ -1,6 +1,4 @@
-.sdk-name-button {
-  border: none;
-  padding: 10px;
-  background-color: red;
-  outline: none;
+.h1 {
+  font-size: 48px;
+  color: red;
 }
