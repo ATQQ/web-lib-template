@@ -26,7 +26,7 @@ new libName()
 ### CDN
 add script in html template
 ```html
-<script src="https://unpkg.com/tpl-web-lib@0.0.2/dist/index.min.js"></script>
+<script src="https://unpkg.com/tpl-web-lib@latest/dist/index.min.js"></script>
 <script>
     new LibName()
 </script>
