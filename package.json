@@ -1,5 +1,5 @@
 {
-  "name": "@tpl/web-lib",
+  "name": "tpl-web-lib",
   "version": "0.0.0",
   "description": "web library template",
   "main": "dist/index.cjs.js",
