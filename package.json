@@ -1,6 +1,6 @@
 {
   "name": "tpl-web-lib",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "web library template",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
