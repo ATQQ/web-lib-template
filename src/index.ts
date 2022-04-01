@@ -10,4 +10,4 @@
 // addStyleDom(document.documentElement, style);
 
 export { default } from './lib/pkg';
-export type { DataItem } from './types/index';
+export * from './types/index';
