@@ -41,10 +41,9 @@ add script in html template
 {
   "scripts": {
     "serve": "vite",
-    "build:dev": "vite build -w",
-    "build": "rimraf dist && vite build && npm run roll-types",
-    "roll-types": "api-extractor run && npm run rm-temp-types",
-    "rm-temp-types": "rimraf dist/lib dist/types dist/constants",
+    "build": "run-s build:*",
+    "build:source": "vite build",
+    "build:type": "tsup src/index.ts --dts-only",
     "lint": "eslint src --fix --ext .ts"
   }
 }
@@ -54,7 +53,7 @@ add script in html template
 * [x] eslint
 * [x] typescript
 * [x] vite/rollup
-* [x] api-extractor
+* [x] tsup
 * [x] build
 * [x] build:dev
 * [x] css/scss/less
